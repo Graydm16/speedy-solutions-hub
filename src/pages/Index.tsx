@@ -98,7 +98,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 border-t border-border/50">
         <div className="text-center text-muted-foreground">
-          <p>&copy; 2024 QuikTools. Simple utilities for everyone.</p>
+          <p>&copy; 2025 QuikTools. Simple utilities for everyone.</p>
         </div>
       </footer>
     </div>
