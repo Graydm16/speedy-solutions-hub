@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { Timer, Clock3, Calculator, Clock, ArrowRightLeft } from "lucide-react";
-import heroImage from "@/assets/quiktools-hero.jpg";
 
 const tools = [
   {
@@ -61,17 +60,6 @@ const Index = () => {
           </p>
         </div>
       </header>
-
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 mb-16">
-        <div className="relative rounded-2xl overflow-hidden shadow-lg mb-12">
-          <img 
-            src={heroImage} 
-            alt="QuikTools - Modern utility applications"
-            className="w-full h-64 object-cover"
-          />
-        </div>
-      </section>
 
       {/* Tools Grid */}
       <section className="container mx-auto px-4 pb-16">
