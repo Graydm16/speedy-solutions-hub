@@ -70,12 +70,6 @@ const Index = () => {
             alt="QuikTools - Modern utility applications"
             className="w-full h-64 object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/80 flex items-center justify-center">
-            <div className="text-center text-white">
-              <h2 className="text-3xl font-bold mb-2">Productivity Made Simple</h2>
-              <p className="text-lg opacity-90">Choose your tool and get started instantly</p>
-            </div>
-          </div>
         </div>
       </section>
 
