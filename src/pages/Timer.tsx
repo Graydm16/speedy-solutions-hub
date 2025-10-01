@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Play, Pause, RotateCcw, Plus, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { Helmet } from "react-helmet-async";
 
 const Timer = () => {
   const navigate = useNavigate();
@@ -95,6 +96,10 @@ const Timer = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Timer - QuikTools</title>
+        <meta name="description" content="Free online countdown timer. Set custom intervals for any task with visual progress tracking and audio alerts." />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center mb-8">

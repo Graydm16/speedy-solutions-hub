@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>About - QuikTools</title>
+        <meta name="description" content="Learn about QuikTools and our mission to provide simple, fast, and reliable online utilities for everyone." />
+      </Helmet>
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <Link to="/" className="inline-flex items-center text-primary hover:text-primary/80 mb-8">
           <ArrowLeft size={20} className="mr-2" />

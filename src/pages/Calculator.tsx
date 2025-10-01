@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 
 const Calculator = () => {
   const navigate = useNavigate();
@@ -122,6 +123,10 @@ const Calculator = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Calculator - QuikTools</title>
+        <meta name="description" content="Free online calculator for basic arithmetic calculations. Simple, fast, and reliable for everyday math." />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center mb-8">

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Play, Pause, RotateCcw, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 
 interface Lap {
   id: number;
@@ -66,6 +67,10 @@ const Stopwatch = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Stopwatch - QuikTools</title>
+        <meta name="description" content="Precise online stopwatch with lap tracking. Measure time accurately for sports, cooking, and productivity tasks." />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center mb-8">

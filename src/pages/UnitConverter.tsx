@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowUpDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Helmet } from "react-helmet-async";
 
 interface ConversionCategory {
   name: string;
@@ -135,6 +136,10 @@ const UnitConverter = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Unit Converter - QuikTools</title>
+        <meta name="description" content="Convert between different units of measurement including length, weight, temperature, and volume. Fast and accurate unit conversion tool." />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center mb-8">

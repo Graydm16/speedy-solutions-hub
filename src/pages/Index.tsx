@@ -1,5 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
 import { Timer, Clock3, Calculator, Clock, ArrowRightLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const tools = [
   {
@@ -49,6 +50,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>QuikTools - Essential Utilities & Calculators Online</title>
+        <meta name="description" content="Free online tools including timer, stopwatch, calculator, world clock, and unit converter. Simple, fast, and reliable utilities for everyday tasks." />
+      </Helmet>
       {/* Header */}
       <header className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
