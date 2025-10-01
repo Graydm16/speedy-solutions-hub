@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Timer, Clock3, Calculator, Clock, ArrowRightLeft } from "lucide-react";
 
 const tools = [
@@ -97,8 +97,19 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 border-t border-border/50">
-        <div className="text-center text-muted-foreground">
-          <p>&copy; 2025 QuikTools. Simple utilities for everyone.</p>
+        <div className="text-center">
+          <div className="flex justify-center space-x-6 mb-4">
+            <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              Contact
+            </Link>
+            <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+          </div>
+          <p className="text-muted-foreground">&copy; 2025 QuikTools. Simple utilities for everyone.</p>
         </div>
       </footer>
     </div>

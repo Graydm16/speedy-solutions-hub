@@ -9,6 +9,9 @@ import Stopwatch from "./pages/Stopwatch";
 import Calculator from "./pages/Calculator";
 import WorldClock from "./pages/WorldClock";
 import UnitConverter from "./pages/UnitConverter";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +29,9 @@ const App = () => (
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/clock" element={<WorldClock />} />
           <Route path="/converter" element={<UnitConverter />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
