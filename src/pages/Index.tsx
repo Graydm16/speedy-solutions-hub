@@ -1,6 +1,7 @@
 import { useNavigate, Link } from "react-router-dom";
 import { Timer, Clock3, Calculator, Clock, ArrowRightLeft } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const tools = [
   {
@@ -56,6 +57,9 @@ const Index = () => {
       </Helmet>
       {/* Header */}
       <header className="container mx-auto px-4 py-8">
+        <div className="flex justify-end mb-4">
+          <ThemeToggle />
+        </div>
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
             QuikTools
