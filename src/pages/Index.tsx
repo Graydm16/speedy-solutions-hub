@@ -87,7 +87,7 @@ const Index = () => {
                     <IconComponent size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-card-foreground">{tool.name}</h3>
+                    <h3 className="tool-title text-xl font-semibold">{tool.name}</h3>
                   </div>
                 </div>
                 <p className="tool-description leading-relaxed">

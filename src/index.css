@@ -144,14 +144,18 @@
     @apply bg-card border border-border rounded-md px-3 py-2 text-card-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200;
   }
 
-  /* Tool description base and dark-mode per-tool accents for better readability */
+  /* Tool text styles and dark-mode per-tool accents for better readability */
   .tool-description {
     @apply text-muted-foreground;
   }
 
-  .dark .tool-card[data-tool="timer"] .tool-description { color: hsl(var(--timer-ink)); }
-  .dark .tool-card[data-tool="stopwatch"] .tool-description { color: hsl(var(--stopwatch-ink)); }
-  .dark .tool-card[data-tool="calculator"] .tool-description { color: hsl(var(--calculator-ink)); }
-  .dark .tool-card[data-tool="clock"] .tool-description { color: hsl(var(--clock-ink)); }
-  .dark .tool-card[data-tool="converter"] .tool-description { color: hsl(var(--converter-ink)); }
+  .tool-title {
+    @apply text-card-foreground;
+  }
+
+  .dark .tool-card[data-tool="timer"] .tool-description, .dark .tool-card[data-tool="timer"] .tool-title { color: hsl(var(--timer-ink)); }
+  .dark .tool-card[data-tool="stopwatch"] .tool-description, .dark .tool-card[data-tool="stopwatch"] .tool-title { color: hsl(var(--stopwatch-ink)); }
+  .dark .tool-card[data-tool="calculator"] .tool-description, .dark .tool-card[data-tool="calculator"] .tool-title { color: hsl(var(--calculator-ink)); }
+  .dark .tool-card[data-tool="clock"] .tool-description, .dark .tool-card[data-tool="clock"] .tool-title { color: hsl(var(--clock-ink)); }
+  .dark .tool-card[data-tool="converter"] .tool-description, .dark .tool-card[data-tool="converter"] .tool-title { color: hsl(var(--converter-ink)); }
 }
