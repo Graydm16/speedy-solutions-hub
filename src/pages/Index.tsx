@@ -80,6 +80,7 @@ const Index = () => {
                 key={tool.name}
                 onClick={() => navigate(tool.path)}
                 className="tool-card group"
+                data-tool={tool.color}
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className={`p-3 rounded-lg bg-gradient-to-br ${tool.gradient} text-white group-hover:scale-110 transition-transform duration-200`}>
@@ -89,7 +90,7 @@ const Index = () => {
                     <h3 className="text-xl font-semibold text-card-foreground">{tool.name}</h3>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="tool-description leading-relaxed">
                   {tool.description}
                 </p>
                 <div className="mt-4 flex items-center text-primary group-hover:text-primary/80 transition-colors">

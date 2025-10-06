@@ -109,6 +109,13 @@
     --sidebar-accent-foreground: 220 15% 95%;
     --sidebar-border: 220 15% 24%;
     --sidebar-ring: 214 84% 64%;
+
+    /* Tool text colors for contrast on light cards */
+    --timer-ink: 14 91% 42%;
+    --stopwatch-ink: 142 70% 40%;
+    --calculator-ink: 262 70% 44%;
+    --clock-ink: 39 100% 40%;
+    --converter-ink: 326 70% 40%;
   }
 }
 
@@ -136,4 +143,15 @@
   .tool-input {
     @apply bg-card border border-border rounded-md px-3 py-2 text-card-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200;
   }
+
+  /* Tool description base and dark-mode per-tool accents for better readability */
+  .tool-description {
+    @apply text-muted-foreground;
+  }
+
+  .dark .tool-card[data-tool="timer"] .tool-description { color: hsl(var(--timer-ink)); }
+  .dark .tool-card[data-tool="stopwatch"] .tool-description { color: hsl(var(--stopwatch-ink)); }
+  .dark .tool-card[data-tool="calculator"] .tool-description { color: hsl(var(--calculator-ink)); }
+  .dark .tool-card[data-tool="clock"] .tool-description { color: hsl(var(--clock-ink)); }
+  .dark .tool-card[data-tool="converter"] .tool-description { color: hsl(var(--converter-ink)); }
 }
